@@ -1,0 +1,179 @@
+.button {
+    background-color: rgb(97, 97, 245);
+    border: 1px solid rgb(96, 96, 244);
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+   border-radius: 30px;
+    font-size: 25px;
+    margin: 100px 50px;
+    cursor: pointer;
+  }
+  p{
+    font-family: 'Sofia';font-size: 20px;
+    color: red;
+  }
+  .container{
+    margin-left: 200px;
+    align-items: center;
+  }
+  .box1{
+    width: 100px;
+    height: 100px;
+    background: rgb(232, 54, 122);
+    transition: width 2s;
+     transition-timing-function: linear; 
+  }
+  .box1:hover {
+    width: 300px;
+  }
+  .box2{
+    width: 100px;
+    height: 100px;
+    background: rgb(101, 220, 101);
+    transition:height width 2s;
+    margin-top: 10px;
+    transition-timing-function: linear;
+  }
+  .box2:hover {
+    width: 300px;
+    height: 300px;
+  }
+  .box3 {
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    background: rgb(232, 54, 122);
+    transition: width 2s;
+    transition-timing-function: linear;
+  }
+  .box3:hover {
+    width: 300px;
+  }
+  .box4 {
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    background: rgb(101, 220, 101);
+    transition: width 2s;
+    transition-timing-function: ease;
+  }
+  .box4:hover {
+    width: 300px;
+  }
+  .box5{
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    background: rgb(232, 54, 122);
+    transition: width 2s;
+    transition-timing-function: ease-in;
+  }
+  .box5:hover {
+    width: 300px;
+  }
+  .box6 {
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    background: rgb(101, 220, 101);
+    transition: width 2s;
+    transition-timing-function: ease-out;
+  }
+  .box6:hover {
+    width: 300px;
+  }
+  .box7 {
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    background: rgb(232, 54, 122);
+    transition: width 2s;
+    transition-timing-function: ease-in-out;
+  }
+  .box7:hover {
+    width: 300px;
+  }
+  .circle {
+    height: 200px;
+    width: 200px;
+    background-color: rgb(218, 55, 55);
+    border-radius: 50%;
+    margin-left: 150px;
+    align-items: center;
+   
+  }
+  h3{
+    color: blue;
+  }
+  .animation{
+    width: 100px;
+    height: 100px;
+    margin-left: 200px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 6s;
+  }
+  
+  @keyframes example {
+    from {
+        background-color: red;
+    }
+    to {
+        background-color: yellow;
+    }
+  }
+  .animation1 {
+    width: 100px;
+    height: 100px;
+   
+    background-color: rgb(0, 208, 255);
+    position: relative;
+    /* animation-name: example;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite; */
+    animation:  example 5s linear 2s infinite alternate;;
+  }
+  
+  @keyframes example {
+    0%   {
+        background-color:rgb(0, 191, 255); left:0px; top:0px;
+    }
+    25%  {
+        background-color:yellow; left:200px; top:0px;
+    }
+    50%  {
+        background-color:blue; left:200px; top:200px;
+    }
+    75%  {
+        background-color:green; left:0px; top:200px;
+    }
+    100% {
+        background-color:red; left:0px; top:0px;
+    }
+  }
+  
+  
+
+ 
+  @media screen and (max-width:600px){
+    .button{
+        width: 200px;
+
+    }
+  }
+  @media screen and (max-width:600px){
+    .container{
+        width: 200px;
+
+    }
+  }
+  @media screen and (max-width:600px){
+    .circle{
+        width: 200px;
+
+    }
+  }
+ 
